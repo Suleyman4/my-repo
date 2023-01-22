@@ -18,7 +18,7 @@ symbol_count = {
 
 symbol_value = {
     "A": 5,
-    "B": 9,
+    "B": 4,
     "C": 3,
     "D": 2
 }
@@ -38,9 +38,9 @@ def check_winnings(columns, lines, bet, values):
     return winnings, winning_lines             
 
     
-def get_slot_machine_spin(rows, cols, symbol):
+def get_slot_machine_spin(rows, cols, symbols):
     all_symbols = []
-    for symbol, symbol_count in symbol.items():
+    for symbol, symbol_count in symbols.items():
         for _ in range(symbol_count):
             all_symbols.append(symbol)
     columns = [] 
